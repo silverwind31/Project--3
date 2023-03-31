@@ -1,0 +1,1093 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 14px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .section_title{
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .container_big{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    /* HEADER */
+    header{
+        padding: 20px 0;
+    }
+    header .header_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_row .links{
+        display: flex;
+        align-items: center;
+    }
+    header .links nav{
+        margin-right: 45px;
+    }
+    header .links nav ul {
+        list-style: none;
+        display: flex;
+        gap: 47px;
+        
+    }
+    header .links nav ul a{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+    header .links .header_action{
+        display: flex;
+        gap: 7px;
+    }
+    header .links .header_action a{
+        background-color: #ffd92c;
+        padding: 13px 21px;
+        border-radius: 20.5px;
+        display: flex;
+        align-items: center;
+    }
+    .header_row .links .header_action a.search_menu{
+        font-size: 14px;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        text-decoration: none;
+        gap: 18px;
+    }
+    /* <!-- COMPARE_FORM --> */
+
+    .compare_form form{
+        display: flex; 
+        border: 1px solid #ece9e9;
+    }
+    .compare_form form select, button{
+        flex: 0 0 auto;
+        width: 33.3%;
+        height: 50px;
+        border: none;
+        align-items: center;
+        padding: 0 17px;
+        font-size: 15px;
+        color: #1e1e1e;
+        white-space: break-spaces;
+    }
+    .compare_form form select:first-child{
+        border-right: 1px solid #ece9e9;
+    }
+    .compare_form form select{
+        background-image: url(../images/form_arrow.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 17px) center;
+        -webkit-appearance: none;
+    }
+    .compare_form form button{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'PT Sans Caption', sans-serif;
+        cursor: pointer;
+        color: #fff;
+        background-color: #199bc5;
+    }
+    .compare_form{
+        background-image: url(../images/compare_bg.jpg);
+        padding: 19px 0;
+        margin-bottom: 31px;
+        background-repeat: no-repeat;   
+        background-size: cover;
+    }
+
+    /* NUMBERS */
+
+    .numbers .number_block{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .numbers .container .number_item{
+        flex: 0 0 auto;
+        width: 25%;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+    }
+    .numbers .container .number_block .number_text p{
+        color: #199bc5;
+        font-size: 34px;
+        letter-spacing: -1px;
+        font-weight: bold;
+    }
+    .numbers .container .number_block .number_description{
+        max-width: 67%;
+    }
+    .numbers .container .number_block .number_description p{
+        font-weight: 400;
+        line-height: 17px;
+    }
+    .numbers{
+        margin-bottom: 50px;
+    }
+
+    /* ONLINE INSURANCE*/
+
+    .online_insurance{
+        margin-bottom: 34px;
+    }
+    .online_insurance .container .section_title{
+        margin-bottom: 38px;
+    }
+    .online_insurance .insurance_block{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .insurance_block .insurance_service{
+        flex: 0 0 auto;
+        width: calc(33.33% - 20px);
+        padding: 24px 20px 18px 26px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 21px 24px 0px rgba(69, 68, 68, 0.06);
+        background-color: #089c9d;
+        position: relative;
+        margin-bottom: 30px;
+        border: 1px solid #ebebeb;
+    }
+    .insurance_block .insurance_service:last-child{
+        border-bottom: none;
+    }
+
+    .insurance_block .insurance_service.half{
+        width: calc(50% - 15px);
+    }
+    .insurance_block .insurance_service::before{
+        content: '';
+        display: block;
+        height: 185px;
+        width: 185px;
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: .04;
+        position: absolute;
+        right: -63px;
+        top: -45px;
+    }
+
+    .insurance_block .insurance_service::after{
+        content: url(../images/layer_service.png);
+        display: block;
+        opacity: 0.17;
+        position: absolute;
+        left: -70px;
+        top: -65px; 
+    }
+    .insurance_block .insurance_service .insurance_header{
+        margin-bottom: 14px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #23a7a8; 
+    }
+    .insurance_block .insurance_service.half .insurance_header{
+        padding-bottom: 36px;
+    }
+    .insurance_block .insurance_service .insurance_header a{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        max-width: 258px;
+        display: block;
+        margin-bottom: 17px;
+    }
+    .insurance_block .insurance_service.half .insurance_header a{
+        margin-bottom: 31px;
+    }
+    .insurance_block .insurance_service .insurance_description{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 255px;
+    }
+    .insurance_block .insurance_service.half .insurance_description{
+        max-width: 353px;
+    }
+    .insurance_block .insurance_service .insurance_header .insurance_image{
+        position: absolute;
+        right: -30px;
+        top: 0;
+    }
+    .insurance_action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .insurance_action .number{
+        display: flex;
+        gap: 7px;
+        align-items: center;
+    }
+    .insurance_service .insurance_action .number div:first-child{
+        font-size: 29px;
+        color: #fff;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 700;
+    }
+    .insurance_service .insurance_action .number div:last-child{
+        font-size: 11px;
+        color: #fff;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        max-width: 60px;
+    }
+    .insurance_service .insurance_action .button a{
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        background-color: #ffd92c;
+        padding: 14px 25px;
+        display: inline-block;
+        border-radius: 20px;
+    }
+
+    /* COMPARE COMPANIES */
+
+    .compare{
+        margin-bottom: 55px;
+    }
+    .compare .compare_block{
+        max-width: 830px;
+        margin: 0 auto;
+    }
+    .compare .section_title{
+        margin-bottom: 55px;
+    }
+    .compare .compare_action{
+        border: 12px solid #f7f6f6;
+        padding: 39px 53px 49px 66px;
+        background-color: #fafafa;
+    }
+    .compare .compare_description{
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 25px;
+        text-align: center;
+        letter-spacing: 1px; 
+    }
+    .compare .compare_action ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    /* COMPANIES */
+
+    .companies{
+        margin-bottom: 79px;
+    }
+
+    .companies .companies_description{
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        max-width: 395px;
+        margin: 0 auto;
+        margin-bottom: 33px;
+    }
+    .companies .companies_scrolling{
+        border-top: 1px solid #f0f2f3;
+        border-bottom: 1px solid #f0f2f3;
+    }
+    .companies .companies_scrolling ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .companies .companies_scrolling ul li {
+        border-right: 1px solid #f0f2f3;
+        padding: 45px 18px;
+        height: 100%;
+        position: relative;
+    }
+    .companies .companies_scrolling ul li a img{
+        height: 50px;
+        object-fit: contain;
+        width: 100%;
+        max-width: 176px;
+    }
+    .companies .companies_scrolling ul li:first-child{
+        border-right: none
+    }
+    .companies .companies_scrolling ul li:nth-child(n+6){
+        border-right: none;
+    }
+    /* CALL TO ACTIONS */
+
+    .call_to_action{
+        margin-bottom: 100px;
+    }
+    .call_to_action .container_big{
+        background-color: #fafafa;
+        padding: 55px 65px 65px 65px;
+    }
+    
+    .call_to_action .cta_logo,
+    .call_to_action .cta_description{
+        text-align: center;
+    }
+    
+    .call_to_action .cta_logo{
+        margin-bottom: 20px;
+    }
+    
+    .call_to_action .cta_description{
+        font-size: 15px;
+        font-family: 'PT Sans Caption', sans-serif;
+        margin-bottom: 30px;
+    }
+    
+    .call_to_action .cta_texts{
+        display: flex;
+        gap: 45px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        margin-bottom: 40px;
+    }
+    
+    .call_to_action .cta_action{
+        text-align: center;
+        position: relative;
+    }
+    
+    .call_to_action .cta_action .button{
+        max-width: 315px;
+        background-color: #fbd93f;
+        display: inline-flex;
+        gap: 17px;
+        align-items: center;
+        padding: 20px 23px;
+        font-size: 17px;
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -102px;
+    }
+
+    /* ADVANTAGES */
+
+    .advantages .section_title{
+        margin-bottom: 40px;
+    }
+    .advantage_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .advantage_block .advantage_item{
+        flex: 0 0 auto;
+        width: calc(50% - 68px);
+        display: flex;
+        gap: 27px;
+        margin-bottom: 40px;
+    }
+    .advantage_block .advantage_item:first-child{
+        gap: 21px;
+    }
+    .advantage_item .advantage_text .advantage_title{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #000;
+    }
+    .advantage_item .advantage_text .advantage_description{
+        font-size: 15px;
+        line-height: 24px;
+        color: #666;
+    }
+
+    /* TEXTS */
+
+    .texts{
+        padding-top: 100px;
+        background-color: #fafafa;
+        padding-bottom: 27px;
+    }
+    .texts .text_top .text_title,
+    .texts .text_bottom .text_title{
+        font-size: 30px;
+        color: #000;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 33px;
+    }
+    .texts .text_top .text_description,
+    .texts .text_bottom .text_description{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .texts .text_top .text_description p:first-child,
+    .texts .text_bottom .text_description p:first-child{
+        margin-bottom: 34px;
+    }
+    .texts .text_top{
+        margin-bottom: 50px;
+    }
+    .texts .text_bottom{
+        margin-bottom: 58px;
+    }
+    .texts .page{
+        display: flex;
+        max-width: 145px;
+        gap: 9px;
+        flex-wrap: wrap;
+    }
+    .breadcrumbs ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .breadcrumbs ul li{
+        color: #666;
+    }
+    .breadcrumbs ul li::after{
+        content: '>';
+        margin: 0 9px;
+    }
+    .breadcrumbs ul li:last-child::after{
+        content: none;
+    }
+    .breadcrumbs ul li a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* SOCIAL NETWORKS */
+    .social_networks{
+        background-color: #333333;
+        padding: 14px 0 16px 0;
+    }
+    .social_networks .networks_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .social_networks .networks_block .social_links ul{
+        display: flex;
+        font-size: 19px;
+        gap: 34px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .social_networks .networks_block .social_links ul a{
+        color: #737272;
+        text-shadow: 0 0 0 rgb(0, 0, 0, 0.32);
+    }
+    .social_networks .networks_block .social_links ul a:hover{
+        color: #ffd92c;
+    }
+
+    /* LINKS */
+
+    .section_links{
+        background-color: #f6f6f6;
+        padding: 55px 0 50px 0;
+    }
+    .section_links .section_links_title{
+        font-size: 27px;
+        font-weight: bold;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .section_links .section_links_title::after{
+        content: '';
+        width: 83px;
+        height: 3px;
+        background-color: #2bc9fc;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -11px;
+    }
+    .section_links .links_block{
+        margin-bottom: 15px;
+    }
+    .section_links .links_title{
+        font-size: 17px;
+        font-weight: bold;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .section_links ul li{
+        list-style: none;
+    }
+    .section_links ul li a{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #666;
+        line-height: 37px;
+        text-decoration: none;
+    }
+    .section_links .links_row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .section_links .links_row .row_item{
+        flex: 0 0 auto;
+        width: calc(25% - 22.5px);
+    }
+
+    /* FOOTER */
+
+    footer .footer_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 52px 0 62px 0;
+    }
+    .footer_row .footer_left_row{
+        flex: 0 0 auto;
+        max-width: calc(75% - 15px);
+    }
+    .footer_row nav{
+        margin-bottom: 42px;
+    }
+    .footer_row nav ul, .footer_mob .footer_mob_top nav ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .footer_row nav ul li{
+        margin-right: 34px;
+    }
+    .footer_row nav ul li a, .footer_mob .footer_mob_top nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #666;
+        line-height: 33px;
+    }
+
+    .footer_left_row .address,
+    .footer_mob .footer_mob_bottom .address{
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #999;
+        max-width: 83%;
+        margin-bottom: 25px;
+    }
+    .footer_left_row .terms_of_use,
+    .footer_mob .footer_mob_bottom .terms_of_use{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #666;
+    }
+    .footer_left_row .terms_of_use a,
+    .footer_mob_bottom .terms_of_use a{
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #666;
+    }
+    .footer_right_row .contact .contact_description,
+    .footer_right_row .social_title, .footer_mob .footer_mob_top .contact_description,
+    .footer_mob .footer_mob_top .social_title{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #666;
+        margin-bottom: 12px;
+    }
+    .footer_right_row{
+        position: relative;
+        width: calc(25% - 15px);
+    }
+    .footer_right_row .contact .phone a, .footer_mob .footer_mob_top .phone a{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        text-decoration: none;
+    }
+    .footer_mob .footer_mob_top{
+        position: relative;
+    }
+    .footer_right_row .contact::after{
+        content: url('../images/headphone.png');
+        position: absolute;
+        top: -7px;
+        left: -37px;
+    }
+    .footer_right_row .contact .phone, .footer_mob .footer_mob_top .phone{
+        margin-bottom: 20px;
+    }
+    .footer_right_row .contact .working_time{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #000;
+        margin-bottom: 35px;
+    }
+    .footer_right_row .social_title, .footer_mob .footer_mob_top .social_title{
+        margin-bottom: 14px;
+    }
+    .footer_right_row .links_to_social ul,
+    .footer_mob .footer_mob_top .links_to_social ul{
+        display: flex;
+        list-style: none;
+        gap: 9px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer_right_row .links_to_social ul li,
+    .footer_mob .footer_mob_top .links_to_social ul li{
+        border: 1px solid #c9c9c9;
+        padding: 11px 11px;
+        background-color: #f9f9f6;
+    }
+    .footer_right_row .links_to_social ul li a:hover{
+        color: #ffd92c;
+    }
+    .all_insurances_opener{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .all_insurances_opener a{
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'PT Sans Caption', sans-serif;
+        color: #fff;
+        background-color: #33cc66;
+        text-decoration: none;
+        display: inline-block;
+        padding: 19px 61px;
+        border-radius: 4px;
+    }
+    footer .footer_mob{
+        display: none;
+    }
+
+/* MEDIA STYLES */
+
+@media (max-width: 1200px){
+    .container, .container_big{
+        max-width: 724px;
+    }
+    header .links nav ul{
+     flex-wrap: wrap;
+      gap: 35px;
+    }
+    header .links nav ul li:nth-child(n+4){
+    display: none;
+    }
+    .insurance_block .insurance_service,
+    .insurance_block .insurance_service.half{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .insurance_block .insurance_service:nth-child(3n){
+        width: 100%;
+    }
+    .insurance_block .insurance_service:nth-child(n+6){
+        display: none;
+    }
+    .numbers{
+        margin-bottom: 47px;
+    }
+    .numbers .container .number_block .number_description{
+        max-width: 70%;
+    }
+    .online_insurance .container{
+        padding: 0;
+    }
+    .online_insurance .container .section_title{
+        margin-bottom: 26px;
+    }
+    .insurance_block .insurance_service.half .insurance_description{
+        max-width: 205px;
+    }
+    .insurance_block .insurance_service .insurance_header a {
+        position: relative;
+        z-index: 1;
+    }
+    .insurance_block .insurance_service .insurance_header .insurance_image{
+        right: -30px;
+    }
+    .all_insurances_opener{
+        display: flex;
+    }
+    .compare .section_title{
+        margin-bottom: 48px;
+    }
+    .compare .compare_action ul li{
+      gap: 20px;
+    }
+    .compare .compare_action{
+        padding: 36px 21px 49px 34px;
+    }
+    .companies .companies_scrolling ul li:nth-child(n+5){
+        display: none;
+    }
+    .companies .companies_scrolling ul li:first-child{
+        display: none;
+    }
+    .companies .companies_scrolling ul li{
+        padding: 52px 38px 53px 35px;
+    }
+    .companies .companies_scrolling ul li:nth-child(n+4){
+        border-right: none;
+    }
+    .call_to_action .cta_logo img{
+        width: 100%;
+        max-width: 145px;
+    }
+
+    .call_to_action .container_big{
+        padding: 40px 15px;
+    }
+
+    .call_to_action .cta_description{
+        margin-bottom: 20px;
+    }
+
+    .call_to_action .cta_texts{
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .call_to_action .cta_texts p:last-child{
+        display: none;
+    }
+
+    .call_to_action .cta_action .button{
+        padding: 15px 10px;
+        font-size: 15px;
+        bottom: -69px;
+    }
+    .advantage_block .advantage_item{
+        width: 100%;
+    }
+    .advantage_block .advantage_item:last-child{
+        display: none;
+    }
+    .call_to_action .cta_action .button img{
+        width: 30px;
+    }
+    .texts{
+        padding-top: 51px;
+    }
+    .texts .text_bottom{
+        margin-bottom: 50px;
+    }
+    .section_links .links_row .row_item{
+        width: calc(33.3% - 22.5px);
+    }
+    .section_links .links_row .row_item:nth-child(1){
+        order: 1;
+    } 
+    .section_links .links_row .row_item:nth-child(2){
+        order: 2;
+    } 
+    .section_links .links_row .row_item:nth-child(3){
+        order: 4;
+    } 
+    .section_links .links_row .row_item:nth-child(4){
+        order: 3;
+    } 
+    footer .footer_row{
+        padding: 31px 0 35px 0;
+    }
+    .footer_right_row{
+        margin-left: 30px;
+        width: calc(35% - 15px);
+    }
+    .footer_row nav ul li:nth-child(5){
+        margin-right: 50px;
+    }
+    .footer_left_row .terms_of_use{
+       width: 724px;
+       position: absolute;
+    }
+    .footer_right_row .links_to_social {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .footer_left_row .address{
+        max-width: 100%;
+    }
+    .footer_row .footer_left_row{
+        flex: 0 0 auto;
+        max-width: calc(65% - 15px);
+    }
+    footer .footer_row{
+        align-items: flex-start;
+    }
+}
+
+/* MEDIA MOBILE */
+
+@media (max-width: 768px){
+    .container, .container_big{
+        max-width: 460px;
+        }
+        header .links nav ul{
+            display: none;
+        }
+        .header_row .links .header_action a.search_menu span{
+            display: none;
+        }
+        .header_row .links .header_action a.search_menu{
+            padding: 12px 13px;
+        }
+        .compare_form form select, button{
+            width: 100%;
+        }
+        .compare_form form{
+            flex-wrap: wrap;
+            border: none;
+        }
+        .numbers .number_block{
+            align-items: center;
+            justify-content: center;
+        }
+        .numbers .number_block .number_item{
+            width: 50%;
+            gap: 12px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 14px;
+            height: 60px;
+        }
+        .numbers .container .number_block .number_description{
+            max-width: 50%;
+        }
+        .numbers{
+            margin-bottom: 0;
+        }
+        .section_title{
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .insurance_block .insurance_service,
+        .insurance_block .insurance_service.half{
+            width: 100%;
+            border-radius: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+        .insurance_block .insurance_service:nth-child(n+4){
+            display: none;
+        }
+        .all_insurances_opener{
+            margin-top: 20px;
+        }
+        .insurance_block .insurance_service .insurance_header .insurance_image{
+            right: -49px;
+            top: 0;
+        }
+        .insurance_block .insurance_service{
+            padding: 24px 15px 18px 15px;
+        }
+        .insurance_block .insurance_service .insurance_description{
+            max-width: 213px;
+        }
+        br {
+            display: none;
+          }
+        .compare .section_title{
+            margin-bottom: 29px;
+        }
+        .compare .compare_action{
+            padding: 20px 20px 30px 20px;
+        }
+        .compare .compare_action ul{
+            justify-content: space-around;
+            gap: 26px;
+        }
+        .compare .compare_description{
+            font-size: 19px;
+        }
+        .compare .compare_description br{
+            display: none;
+        }
+        .companies .companies_description{
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .companies .companies_scrolling ul li:nth-child(1){
+            display: flex;
+        }
+        .companies .companies_scrolling ul li:nth-child(3){
+            display: none;
+        }
+        .companies .companies_scrolling ul li:nth-child(4){
+            display: none;
+        }
+        .companies .companies_scrolling ul li:last-child{
+            display: flex;
+        }
+        .companies .companies_scrolling ul li{
+            border: none;
+            padding: 25px 0;
+        }
+        .companies{
+            margin-bottom: 55px;
+        }
+        .call_to_actions .cta_description{
+            font-size: 14px;
+        }
+        .call_to_actions .container_big{
+            margin: 0 auto;
+        }
+        .call_to_action .cta_action .button{
+            gap: 15px;
+            max-width: 100%;
+            font-size: 17px;
+            justify-content: center;
+            display: inline-flex;
+        }
+        .advantage_block{
+            justify-content: center;
+        }
+        .advantage_block .advantage_item{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .advantage_block .advantage_item:first-child{
+            gap: 5px;
+        }
+        .advantage_block .advantage_item:nth-child(n+2){
+            display: none;
+        }
+        .advantage_block .advantage_item{
+            width: 70%;
+        }
+        .advantage_item .advantage_text .advantage_title{
+            max-width: 60%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .texts .text_top .text_title{
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        .texts .text_bottom{
+            display: none;
+        }
+        .texts .text_top{
+            margin-bottom: 35px;
+        }
+        .social_networks{
+            position: relative;
+        }
+        .social_links{
+            position: absolute;
+            top: 31px;
+            right: 17px;
+        }
+        .social_networks .networks_block .social_links ul{
+            gap: 15px;
+        }
+        .advantages .section_title{
+            margin-bottom: 25px;
+        }
+        .texts{
+            padding-top: 40px;
+        }
+        .section_links .links_row .row_item{
+            width: 100%;
+        }
+
+        footer .footer_row{
+            display: none;
+        }
+        footer .footer_mob{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer_mob .footer_mob_top nav{
+            margin-bottom: 30px;
+        }
+        footer .footer_mob .footer_mob_top{
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .footer_mob .footer_mob_top nav ul{
+            column-gap: 23px;
+        }
+        .footer_mob .footer_mob_top::after{
+            content: url('../images/headphone.png');
+            position: absolute;
+            top: 160px;
+            left: 0;
+        }
+        footer{
+            padding: 30px 0 22px 0;
+        }
+        .footer_mob_top .working_time{
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'PT Sans Caption', sans-serif;
+            color: #000;
+            margin-bottom: 34px;
+        }
+        .footer_mob_top .contact,
+        .footer_mob_top .social_title,
+        .footer_mob_top .links_to_social{
+            padding-left: 35px;
+        }
+        .footer_mob_top .links_to_social{
+            margin-bottom: 39px;
+        }
+       .footer_mob .footer_mob_bottom .address{
+        max-width: 100%;
+       }
+       footer br{
+        display: flex;
+       }
+       
+     @media (max-width: 480px){
+        .container, .container_big{
+            max-width: 100%;
+            padding: 0 15px;
+        }   
+    }
+}
